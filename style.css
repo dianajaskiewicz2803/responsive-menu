@@ -144,10 +144,10 @@ header {
 		top: 0;
 	}
 	.hamburger-menu .bar:nth-of-type(2) {
-		top: 10px;
+		top: 9px;
 	}
 	.hamburger-menu .bar:nth-of-type(3) {
-		top: 21px;
+		top: 20px;
 	}
 	.nav__menu--top {
 		display : none;
