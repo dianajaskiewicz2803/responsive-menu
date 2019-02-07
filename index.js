@@ -9,6 +9,7 @@ window.onclick = function(e) {
 		menu.classList.add('nav__menu--closed');
 		menu.classList.remove('nav__menu--opened');
 		document.getElementsByClassName('hamburger-menu')[0].classList.add('closed');
+		document.getElementsByClassName('body-overlay')[0].style.display = "none";
 		document.getElementsByClassName('hamburger-menu')[0].classList.remove('opened');
 	}
 }
