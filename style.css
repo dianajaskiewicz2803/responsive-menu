@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 body {
@@ -124,12 +125,14 @@ header {
 		cursor: pointer;
 	}
 	.hamburger-menu.opened .bar:nth-of-type(1){
-		 -webkit-transform: rotate(-45deg) translate(-10px, 6px) ;
-		transform: rotate(-45deg) translate(-10px, 6px) ;
+		 -webkit-transform: rotate(-45deg) translate(-7px, 5px) ;
+		-ms-transform: rotate(-45deg) translate(-7px, 5px) ;
+		    transform: rotate(-45deg) translate(-7px, 5px) ;
 	}
 	.hamburger-menu.opened .bar:nth-of-type(3){
-		-webkit-transform: rotate(45deg) translate(-8px, -6px) ;
-		transform: rotate(45deg) translate(-8px, -6px) ;
+		-webkit-transform: rotate(45deg) translate(-8px, -7px) ;
+		-ms-transform: rotate(45deg) translate(-8px, -7px) ;
+		    transform: rotate(45deg) translate(-8px, -7px) ;
 	}
 	.hamburger-menu.opened .bar:nth-of-type(2){
 		opacity: 0;
@@ -161,12 +164,16 @@ header {
 		z-index: 1;
 	}
 	.nav .nav__menu--opened {
-		animation: openMenu 0.5s linear;
-		animation-fill-mode: forwards;
+		-webkit-animation: openMenu 0.5s linear;
+		        animation: openMenu 0.5s linear;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
 	}
 	.nav .nav__menu--closed {
-		animation: closeMenu 0.5s linear;
-		animation-fill-mode: forwards;
+		-webkit-animation: closeMenu 0.5s linear;
+		        animation: closeMenu 0.5s linear;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
 	}
 
 	.nav .nav__menu .nav__item {
@@ -197,8 +204,10 @@ header {
 		width: 250px;
 		left: -10px;
 		top: 49px;
-		animation: showWithOpacity 0.5s linear;
-		animation-fill-mode: forwards;
+		-webkit-animation: showWithOpacity 0.5s linear;
+		        animation: showWithOpacity 0.5s linear;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
 		z-index: 1;
 		visibility: visible;
 	}
@@ -206,12 +215,16 @@ header {
 		padding: 8px 16px;
 	}
 	.nav .nav__menu .nav__item.move-bottom {
-		animation: growPaddingTop 0.5s linear;
-		animation-fill-mode: forwards;
+		-webkit-animation: growPaddingTop 0.5s linear;
+		        animation: growPaddingTop 0.5s linear;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
 	}
 	.nav .nav__menu .nav__item.move-top {
-		animation: reducePaddingTop 0.5s linear;
-		animation-fill-mode: forwards;
+		-webkit-animation: reducePaddingTop 0.5s linear;
+		        animation: reducePaddingTop 0.5s linear;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
 	}
 	.nav .nav__menu .nav__item .nav__submenu .nav__submenu--link {
 		padding-left: 10px;
@@ -223,21 +236,41 @@ header {
 		visibility: visible;
 	}
 }
+@-webkit-keyframes openMenu {
+	from {right: -220px}
+	to {right: 0;}
+}
 @keyframes openMenu {
 	from {right: -220px}
 	to {right: 0;}
+}
+@-webkit-keyframes closeMenu {
+	from {right: 0px}
+	to {right: -220;}
 }
 @keyframes closeMenu {
 	from {right: 0px}
 	to {right: -220;}
 }
+@-webkit-keyframes growPaddingTop {
+	0% {padding-top: 16px}
+	100% {padding-top: 165px}
+}
 @keyframes growPaddingTop {
 	0% {padding-top: 16px}
 	100% {padding-top: 165px}
 }
+@-webkit-keyframes reducePaddingTop {
+	0% {padding-top: 165px}
+	100% {padding-top: 16px}
+}
 @keyframes reducePaddingTop {
 	0% {padding-top: 165px}
 	100% {padding-top: 16px}
+}
+@-webkit-keyframes showWithOpacity {
+	from {opacity: 0}
+	to {opacty: 1}
 }
 @keyframes showWithOpacity {
 	from {opacity: 0}
