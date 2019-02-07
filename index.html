@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Zadanie - menu responsywne</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		<nav class="nav">
+			<div class="hamburger-menu closed">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+			<div class="nav__logo"><a href="/"><img src="logo.png" alt="Predictes"></a></div>
+			<div class="nav__menu">
+				<ul class="nav__menu--top">
+					<li class="nav__item nav__item--red"><img src="ico-mobile.png" alt="numer telefonu"><span>+48 618 908 392</span></li>
+					<li class="nav__item nav__item--red"><img src="ico-email.png" alt="e-mail"><span><a href="mailto:office@predictes.com">office@predictes.com</a></span></li>
+				</ul>
+				<ul class="nav__menu--bottom">
+					<li class="nav__item"><a class="nav__item--link" href="">O firmie</a>
+						<ul class="nav__submenu">
+							<li class="nav__item"><a class="nav__submenu--link" href="">O nas</a></li>
+							<li class="nav__item"><a class="nav__submenu--link" href="">Historia</a></li>
+							<li class="nav__item"><a class="nav__submenu--link" href="">Zespół</a></li>
+						</ul>
+					</li>
+					<li class="nav__item"><a class="nav__item--link" href="">realizacje</a></li>
+					<li class="nav__item"><a class="nav__item--link" href="">blog</a></li>
+					<li class="nav__item"><a class="nav__item--link" href="">partnerzy</a></li>
+					<li class="nav__item"><a class="nav__item--link" href="">kontakt</a></li>
+					<li class="nav__item nav__item--red hidden-on-desktop margin-top-20"><img src="ico-mobile.png" alt="numer telefonu"><span>+48 618 908 392</span></li>
+					<li class="nav__item nav__item--red hidden-on-desktop"><img src="ico-email.png" alt="e-mail"><span><a href="mailto:office@predictes.com">office@predictes.com</a></sp</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="body-overlay"></div>
+		<header></header>
+		<script src="index.js"></script>
+	</body>
+</html>
