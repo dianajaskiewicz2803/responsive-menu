@@ -4,6 +4,7 @@ body {
 	margin: 0; 
 	background-color: gray;
 	overflow-x:hidden;
+	position: relative;
 }
 .body-overlay {
 	position: absolute;
